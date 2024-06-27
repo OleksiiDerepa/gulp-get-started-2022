@@ -69,6 +69,7 @@ set up watcher
 clean dist folder - install del plugin
     npm i -D del
 ============ 13 =============
+copy html to dist folder
 ============ 14 =============
 ============ 15 =============
 ============ 16 =============
