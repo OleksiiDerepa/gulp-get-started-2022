@@ -89,6 +89,10 @@ add setting for 'Path Autocomplete' VS Code plugin
 editing files via replace @img/ to img/ - install gulp-replace plugin
     npm i -D gulp-replace
 ============ 17 =============
+converting img tag with using webp format automatically - install gulp-webp-html-nosvg
+converting common <img src=...> to <picture> with additional using webp format
+<picture><source srcset="img/cover.webp" type="image/webp"><img src="img/cover.jpg" alt="image"></picture>
+    npm i -D gulp-webp-html-nosvg
 ============ 18 =============
 ============ 19 =============
 ============ 20 =============
