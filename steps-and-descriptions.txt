@@ -1,0 +1,17 @@
+============ 0 =============
+echo "# gulp-get-started-2022" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/OleksiiDerepa/gulp-get-started-2022.git
+git push -u origin main
+============ 1 =============
+============ 2 =============
+============ 3 =============
+============ 4 =============
+============ 5 =============
+============ 6 =============
+============ 7 =============
+============ 8 =============
+============ 9 =============
