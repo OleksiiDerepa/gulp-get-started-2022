@@ -75,6 +75,16 @@ build html page from all include parts - install gulp-file-include plugin
     npm i -D gulp-file-include
 
 ============ 15 =============
+add setting for 'Path Autocomplete' VS Code plugin
+
+    get-started-2022\.vscode\settings.json
+    {
+        "path-autocomplete.pathMappings": {        
+            "@img": "${folder}/src/img",    // alias for images
+            "@scss": "${folder}/src/scss",  // alias for scss
+            "@js": "${folder}/src/js",      // alias for js
+        }
+    }
 ============ 16 =============
 ============ 17 =============
 ============ 18 =============
