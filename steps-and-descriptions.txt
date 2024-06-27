@@ -15,6 +15,8 @@ add .gitignore file
 npm init 
 setup package.json type as "module"
 ============ 3 =============
+install gulp cli globaly into our OS
+npm i gulp-cli -g
 ============ 4 =============
 ============ 5 =============
 ============ 6 =============
