@@ -48,6 +48,7 @@ add path.js file with init data
 ============ 8 =============
 import files into gulpfile.js
 ============ 9 =============
+add gulp\tasks\copy.js file
 ============ 10 =============
 ============ 11 =============
 ============ 12 =============
