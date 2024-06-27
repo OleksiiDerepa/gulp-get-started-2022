@@ -110,6 +110,11 @@ avoid browser cacheing for styles / images / files - install gulp-replace plugin
     TO
     <script src="js/app.min.js?_v=20240627170908"></script>
 ============ 19 =============
+catch errors and show them in the browser - install gulp-plumber and gulp-notify plugin
+    npm i -D gulp-plumber gulp-notify
+
+    Check that notification in the Windows is turn 
+        click on the Windows icon -> search for "Notifications" -> turn on
 ============ 20 =============
 ============ 21 =============
 ============ 22 =============
