@@ -64,6 +64,7 @@ and setup it as default task
             Tasks for get-started-2022\gulpfile.js
             └── default
 ============ 11 =============
+set up watcher 
 ============ 12 =============
 ============ 13 =============
 ============ 14 =============
