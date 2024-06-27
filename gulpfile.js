@@ -3,7 +3,7 @@ import gulp from 'gulp';
 // Import our path
 import { path } from './gulp/config/path.js';
 // Import common plugins
-//import { plugins } from './gulp/config/plugins.js';
+import { plugins } from './gulp/config/plugins.js';
 
 // Pass values to global variable
 global.app = {
@@ -11,7 +11,7 @@ global.app = {
     isDev: !process.argv.includes('--build'),
     path: path,
     gulp: gulp,
-    //plugins: plugins,
+    plugins: plugins,
 }
 
 // Import tasks

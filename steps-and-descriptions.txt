@@ -86,6 +86,8 @@ add setting for 'Path Autocomplete' VS Code plugin
         }
     }
 ============ 16 =============
+editing files via replace @img/ to img/ - install gulp-replace plugin
+    npm i -D gulp-replace
 ============ 17 =============
 ============ 18 =============
 ============ 19 =============
