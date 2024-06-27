@@ -66,6 +66,8 @@ and setup it as default task
 ============ 11 =============
 set up watcher 
 ============ 12 =============
+clean dist folder - install del plugin
+    npm i -D del
 ============ 13 =============
 ============ 14 =============
 ============ 15 =============
