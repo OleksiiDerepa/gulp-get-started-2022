@@ -28,6 +28,21 @@ create gulpfile.js
 //    create a default task
 //    create a watch task
 ============ 6 =============
+create gulp and src folder structure
+
+├───gulp
+│   ├───config
+│   │   ├───ftp.js
+│   │   ├───path.js
+│   │   └───plugins.js
+│   └───tasks
+└───src
+    ├───fonts
+    ├───html
+    ├───img
+    ├───js
+    └───scss
+
 ============ 7 =============
 ============ 8 =============
 ============ 9 =============
