@@ -123,6 +123,20 @@ setup server for development - install browser-sync plugin
 run server, run index.html page and refresh page in case of changes in files
     npm i -D browser-sync
 ============ 22 =============
+setup SASS transformation - install SASS GULP-SASS plugin
+processing scss files and transform them into css files (sass gulp-sass)
+rename css file extention from .css to .min.css (gulp-rename)
+minify css files (gulp-clean-css)
+output webp images (gulp-webpcss webp-converter@2.2.3)
+autoprefixer css files (добавление вендорных префиксов для кросбраузерной верстки) (gulp-autoprefixer)
+group media queries (gulp-group-css-media-queries)
+
+    npm i -D sass gulp-sass
+    npm i -D gulp-rename
+    npm i -D gulp-clean-css
+    npm i -D gulp-webpcss webp-converter@2.2.3
+    npm i -D gulp-autoprefixer
+    npm i -D gulp-group-css-media-queries
 ============ 23 =============
 ============ 24 =============
 ============ 25 =============
