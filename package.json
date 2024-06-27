@@ -1,0 +1,24 @@
+{
+  "name": "get-started-2022",
+  "version": "1.0.0",
+  "description": "GULP 2022 установка настройка плагинов",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "some"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksiiDerepa/gulp-get-started-2022.git"
+  },
+  "keywords": [
+    "learn",
+    "gulp"
+  ],
+  "author": "Oleksii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleksiiDerepa/gulp-get-started-2022/issues"
+  },
+  "homepage": "https://github.com/OleksiiDerepa/gulp-get-started-2022#readme"
+}
