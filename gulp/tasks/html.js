@@ -41,5 +41,6 @@ export const html = () => {
                 }
             })
         )       
-        .pipe(global.app.gulp.dest(global.app.path.build.html));
+        .pipe(global.app.gulp.dest(global.app.path.build.html))
+        .pipe(global.app.plugins.browsersync.stream());
 }

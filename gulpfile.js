@@ -18,6 +18,7 @@ global.app = {
 import { copy } from './gulp/tasks/copy.js';
 import { reset } from './gulp/tasks/reset.js';
 import { html } from './gulp/tasks/html.js';
+import { server } from './gulp/tasks/server.js';
 
 // 1) setup watcher
 // Observe changes in files
@@ -34,15 +35,20 @@ const mainTasks = gulp.parallel(
     html
 );
 
+const finalTasks = gulp.parallel(
+    watcher, //observe changes in files
+    server  //run server, run index.html page and refresh page in case of changes in files
+);
+
 // 3) setup sequence of steps for dev mode task pipeline 
 // SERIES - SERIAL MODE for our steps
 // 1 step - delete all data from dist folder
 // 2 step - copy all files from source folder
 // 3 step - watch for changes in files
 const dev = gulp.series(
-    reset, //clean dist folder
-    mainTasks, // execute all main tasks in parallel mode
-    watcher //observe changes in files
+    reset,      // execute clean dist folder
+    mainTasks,  // execute all main tasks in parallel mode
+    finalTasks  // execute all final tasks in parallel mode
 );
 
 //Run default task by default

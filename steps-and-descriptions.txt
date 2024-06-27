@@ -119,6 +119,9 @@ catch errors and show them in the browser - install gulp-plumber and gulp-notify
 process PUG files for building html files - install gulp-pug plugin
     npm i -D gulp-pug
 ============ 21 =============
+setup server for development - install browser-sync plugin
+run server, run index.html page and refresh page in case of changes in files
+    npm i -D browser-sync
 ============ 22 =============
 ============ 23 =============
 ============ 24 =============
