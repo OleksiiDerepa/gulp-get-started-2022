@@ -50,6 +50,19 @@ import files into gulpfile.js
 ============ 9 =============
 add gulp\tasks\copy.js file
 ============ 10 =============
+import 'copy' task into gulpfile.js
+and setup it as default task
+    run default task
+        gulp
+            ====== RESULTS ======
+            [12:49:34] get-started-2022\gulpfile.js
+            [12:49:34] Starting 'default'...
+            [12:49:34] Finished 'default' after 16 ms
+    get all tasks
+        gulp --tasks
+            ====== RESULTS ======
+            Tasks for get-started-2022\gulpfile.js
+            └── default
 ============ 11 =============
 ============ 12 =============
 ============ 13 =============
