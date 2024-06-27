@@ -23,6 +23,10 @@ install gulp into our local project
         OR
     npm i gulp -D
 ============ 5 =============
+create gulpfile.js
+//    create a task
+//    create a default task
+//    create a watch task
 ============ 6 =============
 ============ 7 =============
 ============ 8 =============
