@@ -94,6 +94,21 @@ converting common <img src=...> to <picture> with additional using webp format
 <picture><source srcset="img/cover.webp" type="image/webp"><img src="img/cover.jpg" alt="image"></picture>
     npm i -D gulp-webp-html-nosvg
 ============ 18 =============
+avoid browser cacheing for styles / images / files - install gulp-replace plugin
+    npm i -D gulp-version-number
+
+    this plugin add version file and fill in gulp\version.json
+    {
+        "main": "20240627170908"
+    }
+    after that it adds to html file version to css and js files
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    TO
+    <link rel="stylesheet" href="css/style.min.css?_v=20240627170908">
+    <script src="js/app.min.js"></script>
+    TO
+    <script src="js/app.min.js?_v=20240627170908"></script>
 ============ 19 =============
 ============ 20 =============
 ============ 21 =============
