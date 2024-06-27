@@ -18,6 +18,10 @@ setup package.json type as "module"
 install gulp cli globaly into our OS
 npm i gulp-cli -g
 ============ 4 =============
+install gulp into our local project
+    npm i gulp --save-dev
+        OR
+    npm i gulp -D
 ============ 5 =============
 ============ 6 =============
 ============ 7 =============
