@@ -44,6 +44,7 @@ create gulp and src folder structure
     └───scss
 
 ============ 7 =============
+add path.js file with init data
 ============ 8 =============
 ============ 9 =============
 ============ 10 =============
