@@ -71,6 +71,9 @@ clean dist folder - install del plugin
 ============ 13 =============
 copy html to dist folder
 ============ 14 =============
+build html page from all include parts - install gulp-file-include plugin
+    npm i -D gulp-file-include
+
 ============ 15 =============
 ============ 16 =============
 ============ 17 =============
