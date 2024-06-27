@@ -1,7 +1,7 @@
 import fileInclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
-//import pug from "gulp-pug";
+import pug from "gulp-pug";
 
 // html
 export const html = () => {
@@ -12,6 +12,16 @@ export const html = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
+/*
+        .pipe(pug(//process PUG files for building html files
+            {
+                // squeezing html file
+                pretty: true,//beautify html
+                // show in the terminal wich file was processed
+                verbose: true,//show errors
+            }
+        ))
+*/
         .pipe(fileInclude())//build html file from small parts to one file
         .pipe(global.app.plugins.replace(/@img\//g, 'img/'))// replace @img/ to img/
         .pipe(webpHtmlNosvg())//converting common <img src=...> to <picture> with additional using webp format

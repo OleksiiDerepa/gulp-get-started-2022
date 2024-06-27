@@ -116,6 +116,8 @@ catch errors and show them in the browser - install gulp-plumber and gulp-notify
     Check that notification in the Windows is turn 
         click on the Windows icon -> search for "Notifications" -> turn on
 ============ 20 =============
+process PUG files for building html files - install gulp-pug plugin
+    npm i -D gulp-pug
 ============ 21 =============
 ============ 22 =============
 ============ 23 =============
