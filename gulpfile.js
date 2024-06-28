@@ -21,7 +21,7 @@ import { html } from './gulp/tasks/html.js';
 import { server } from './gulp/tasks/server.js';
 import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
-// import { images } from './gulp/tasks/images.js';
+import { images } from './gulp/tasks/images.js';
 
 // 1) setup watcher
 // Observe changes in files
@@ -30,6 +30,7 @@ function watcher(){
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
+    gulp.watch(path.watch.images, images);
 }
 
 // 2) setup paralel steps for dev mode task pipeline
@@ -40,6 +41,7 @@ const mainTasks = gulp.parallel(
     html,
     scss,
     js,
+    images
 );
 
 const finalTasks = gulp.parallel(

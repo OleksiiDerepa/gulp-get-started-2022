@@ -1,5 +1,5 @@
 // processing scss files and transform them into css files
-import dartSass from "sass";
+import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
 

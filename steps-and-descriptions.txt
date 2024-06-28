@@ -141,6 +141,11 @@ group media queries (gulp-group-css-media-queries)
 compile js - install webpack-stream plugin
     npm i -D webpack-stream
 ============ 24 =============
+processing images - install gulp-webp plugin
+    npm i -D gulp-webp
+    npm i -D gulp-imagemin
+    npm i -D gulp-newer
+        npm i -D gulp-newer gulp-imagemin gulp-webp
 ============ 25 =============
 ============ 26 =============
 ============ 27 =============
