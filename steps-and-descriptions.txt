@@ -138,6 +138,8 @@ group media queries (gulp-group-css-media-queries)
     npm i -D gulp-autoprefixer
     npm i -D gulp-group-css-media-queries
 ============ 23 =============
+compile js - install webpack-stream plugin
+    npm i -D webpack-stream
 ============ 24 =============
 ============ 25 =============
 ============ 26 =============
