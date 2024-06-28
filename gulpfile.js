@@ -22,7 +22,7 @@ import { server } from './gulp/tasks/server.js';
 import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
-
+import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
 // 1) setup watcher
 // Observe changes in files
 function watcher(){
@@ -33,15 +33,22 @@ function watcher(){
     gulp.watch(path.watch.images, images);
 }
 
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
+
 // 2) setup paralel steps for dev mode task pipeline
 // any task can execute in any sequence
 // PARALLEL - ASYNC MODE for our steps
-const mainTasks = gulp.parallel(
+const copyAllFiles = gulp.parallel(
     copy, // copy all files from source 'files' folder to 'dist/files' folder
     html,
     scss,
     js,
     images
+);
+
+const mainTasks = gulp.series(
+    fonts, 
+    copyAllFiles
 );
 
 const finalTasks = gulp.parallel(

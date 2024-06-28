@@ -24,6 +24,15 @@ export const path = {
     html: `${srcFolder}/*.html`,//.pug,
     files: `${srcFolder}/files/**/*.*`,
     svgicons: `${srcFolder}/svgicons/*.svg`,
+    fonts: {
+      src: `${srcFolder}/fonts/`,
+      scss: `${srcFolder}/scss/fonts.scss`,
+      woff: `${srcFolder}/fonts/*.woff`,
+      woff2: `${srcFolder}/fonts/*.woff2`,
+      ttf: `${srcFolder}/fonts/*.ttf`,
+      otf: `${srcFolder}/fonts/*.otf`,
+    },
+
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,

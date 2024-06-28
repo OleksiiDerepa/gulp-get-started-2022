@@ -147,6 +147,12 @@ processing images - install gulp-webp plugin
     npm i -D gulp-newer
         npm i -D gulp-newer gulp-imagemin gulp-webp
 ============ 25 =============
+processing fonts 
+    npm i -D fs
+    npm i -D gulp-fonter
+    npm i -D gulp-fonter-fix
+    npm i -D gulp-ttf2woff2
+        npm i -D fs gulp-fonter gulp-ttf2woff2
 ============ 26 =============
 ============ 27 =============
 ============ 28 =============

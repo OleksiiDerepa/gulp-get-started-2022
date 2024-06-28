@@ -1,6 +1,10 @@
+@import 'fonts.scss';
+
 body{
+    // font-family: "CormorantUpright";
+    font-size: 40px;
     background-color: white;
-    color: black;
+    color: red;
     span{
         background-color: rgba(60, 0, 255, 0.456);
     }
