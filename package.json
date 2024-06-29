@@ -7,8 +7,10 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build --build",
-    "svgSprite": "gulp svgSprive",
-    "deployZIP": "gulp deployZIP --build"
+    "zip": "gulp deployZIP --build",
+    "deploy": "gulp deployFTP --build",
+    "svgSprite": "gulp svgSprive"
+    
   },
   "repository": {
     "type": "git",
@@ -46,12 +48,14 @@
     "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-ttf2woff2": "^4.0.1",
+    "gulp-util": "^3.0.8",
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^5.0.0",
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^6.0.0",
     "sass": "^1.77.6",
+    "vinyl-ftp": "^0.6.1",
     "webp-converter": "^2.2.3",
     "webpack-stream": "^7.0.0"
   }

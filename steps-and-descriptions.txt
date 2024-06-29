@@ -222,6 +222,8 @@ add conditional functionality into gulp pipelines
 setup archive functionality
     npm i -D gulp-zip
 ============ 33 =============
+ftp configuration
+    npm i -D vinyl-ftp gulp-util
 ============ 34 =============
 ============ 35 =============
 ============ 36 =============

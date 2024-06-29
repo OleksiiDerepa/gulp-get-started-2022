@@ -25,17 +25,17 @@ import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
 import { svgSprive } from './gulp/tasks/svgSprive.js';
 import { zip } from './gulp/tasks/zip.js';
-// import { ftp } from './gulp/tasks/ftp.js';
+import { ftp } from './gulp/tasks/ftp.js';
 
 // Наблюдатель
 // 1) setup watcher
 // Observe changes in files
 function watcher() {
-    gulp.watch(path.watch.files, copy);
-    gulp.watch(path.watch.html, html);
-    gulp.watch(path.watch.scss, scss);
-    gulp.watch(path.watch.js, js);
-    gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.files, copy);// gulp.watch(path.watch.html, gulp.series(copy, ftp));
+    gulp.watch(path.watch.html, html);// gulp.watch(path.watch.html, gulp.series(html, ftp));
+    gulp.watch(path.watch.scss, scss);// gulp.watch(path.watch.html, gulp.series(scss, ftp));
+    gulp.watch(path.watch.js, js);// gulp.watch(path.watch.html, gulp.series(js, ftp));
+    gulp.watch(path.watch.images, images);// gulp.watch(path.watch.html, gulp.series(images, ftp));
 }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
@@ -83,6 +83,12 @@ const deployZIP = gulp.series(
     zip
 );
 
+const deployFTP = gulp.series(
+    reset,      // execute clean dist folder
+    mainTasks,  // execute all main tasks in parallel mode
+    ftp
+);
+
 //Run default task by default
 gulp.task('default', dev);
 
@@ -91,3 +97,4 @@ export { svgSprive };
 export { build };
 export { dev };
 export { deployZIP };
+export { deployFTP };
