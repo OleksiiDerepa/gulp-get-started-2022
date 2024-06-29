@@ -167,7 +167,7 @@ SETUP .vscode\launch.json file for js code debugging for node.js
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch Program DEBUG for node.js",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -176,6 +176,24 @@ SETUP .vscode\launch.json file for js code debugging for node.js
     ]
 }
 ============ 27 =============
+Attach debugger to Port
+add attach configuration for debugging
+1) Open 'Run and Debug'
+2) Select 'Add Configuration'
+3) Select 'Node.js Attach'
+Now you have to start your app with this port as the --inspect parameter.
+4) Run the app with the following command:
+node --inspect=9229 index.js
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+5) Go to the debugging tab, select "Attach" from the dropdown, and click the start icon.
 ============ 28 =============
 ============ 29 =============
 
