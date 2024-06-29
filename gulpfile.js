@@ -23,9 +23,14 @@ import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
+import { svgSprive } from './gulp/tasks/svgSprive.js';
+// import { zip } from './gulp/tasks/zip.js';
+// import { ftp } from './gulp/tasks/ftp.js';
+
+// Наблюдатель
 // 1) setup watcher
 // Observe changes in files
-function watcher(){
+function watcher() {
     gulp.watch(path.watch.files, copy);
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
@@ -47,7 +52,7 @@ const copyAllFiles = gulp.parallel(
 );
 
 const mainTasks = gulp.series(
-    fonts, 
+    fonts,
     copyAllFiles
 );
 
@@ -69,3 +74,6 @@ const dev = gulp.series(
 
 //Run default task by default
 gulp.task('default', dev);
+
+
+export { svgSprive };
