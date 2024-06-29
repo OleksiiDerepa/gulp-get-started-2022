@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "gulp dev",
+    "build": "gulp build --build",
     "svgSprite": "gulp svgSprive"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "gulp-fonter": "^0.3.0",
     "gulp-fonter-fix": "^0.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^4.0.0",

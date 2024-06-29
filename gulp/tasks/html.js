@@ -12,35 +12,43 @@ export const html = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-/*
-        .pipe(pug(//process PUG files for building html files
-            {
-                // squeezing html file
-                pretty: true,//beautify html
-                // show in the terminal wich file was processed
-                verbose: true,//show errors
-            }
-        ))
-*/
+        /*
+                .pipe(pug(//process PUG files for building html files
+                    {
+                        // squeezing html file
+                        pretty: true,//beautify html
+                        // show in the terminal wich file was processed
+                        verbose: true,//show errors
+                    }
+                ))
+        */
         .pipe(fileInclude())//build html file from small parts to one file
         .pipe(global.app.plugins.replace(/@img\//g, 'img/'))// replace @img/ to img/
-        .pipe(webpHtmlNosvg())//converting common <img src=...> to <picture> with additional using webp format
         .pipe(
-            versionNumber({
-                'value': '%DT%',
-                'append': {
-                    'key': '_v',
-                    'cover': 0,
-                    'to': [
-                        'css',
-                        'js',
-                    ]
-                },
-                'output': {
-                    'file': 'gulp/version.json'
-                }
-            })
-        )       
+            global.app.plugins.if(
+                global.app.isBuild,
+                webpHtmlNosvg()//converting common <img src=...> to <picture> with additional using webp format
+            )
+        )
+        .pipe(
+            global.app.plugins.if(
+                global.app.isBuild,
+                versionNumber({
+                    'value': '%DT%',
+                    'append': {
+                        'key': '_v',
+                        'cover': 0,
+                        'to': [
+                            'css',
+                            'js',
+                        ]
+                    },
+                    'output': {
+                        'file': 'gulp/version.json'
+                    }
+                })
+            )
+        )
         .pipe(global.app.gulp.dest(global.app.path.build.html))
         .pipe(global.app.plugins.browsersync.stream());
 }

@@ -216,6 +216,8 @@ processing svg sprite
 ============ 30 =============
 set up NPM RUN DEV in the package.json file
 ============ 31 =============
+add conditional functionality into gulp pipelines
+    npm i -D gulp-if
 ============ 32 =============
 ============ 33 =============
 ============ 34 =============

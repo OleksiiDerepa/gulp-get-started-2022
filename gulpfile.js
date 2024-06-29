@@ -72,8 +72,15 @@ const dev = gulp.series(
     finalTasks  // execute all final tasks in parallel mode
 );
 
+const build = gulp.series(
+    reset,      // execute clean dist folder
+    mainTasks,  // execute all main tasks in parallel mode
+);
+
 //Run default task by default
 gulp.task('default', dev);
 
-
+//Export scenarios
 export { svgSprive };
+export { build };
+export { dev };
