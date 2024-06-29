@@ -7,6 +7,10 @@ const buildFolder = './dist'; // we can use rootFolder
 const srcFolder = './src';
 
 export const path = {
+  zip: {
+   archiveFile : `${rootFolder}.zip`,
+   targetSrc: `${buildFolder}/**/*.*`,
+  },
   build: {
     js: `${buildFolder}/js/`,
     css: `${buildFolder}/css/`,

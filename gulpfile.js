@@ -24,7 +24,7 @@ import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
 import { svgSprive } from './gulp/tasks/svgSprive.js';
-// import { zip } from './gulp/tasks/zip.js';
+import { zip } from './gulp/tasks/zip.js';
 // import { ftp } from './gulp/tasks/ftp.js';
 
 // Наблюдатель
@@ -77,6 +77,12 @@ const build = gulp.series(
     mainTasks,  // execute all main tasks in parallel mode
 );
 
+const deployZIP = gulp.series(
+    reset,      // execute clean dist folder
+    mainTasks,  // execute all main tasks in parallel mode
+    zip
+);
+
 //Run default task by default
 gulp.task('default', dev);
 
@@ -84,3 +90,4 @@ gulp.task('default', dev);
 export { svgSprive };
 export { build };
 export { dev };
+export { deployZIP };

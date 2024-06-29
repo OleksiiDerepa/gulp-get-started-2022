@@ -219,6 +219,8 @@ set up NPM RUN DEV in the package.json file
 add conditional functionality into gulp pipelines
     npm i -D gulp-if
 ============ 32 =============
+setup archive functionality
+    npm i -D gulp-zip
 ============ 33 =============
 ============ 34 =============
 ============ 35 =============
