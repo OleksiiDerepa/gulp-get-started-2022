@@ -214,6 +214,7 @@ https://wweb.dev/blog/debugging-javascript-vscode#:~:text=Launch%20Firefox%20or%
 processing svg sprite
     npm i -D gulp-svg-sprite
 ============ 30 =============
+set up NPM RUN DEV in the package.json file
 ============ 31 =============
 ============ 32 =============
 ============ 33 =============
