@@ -154,6 +154,27 @@ processing fonts
     npm i -D gulp-ttf2woff2
         npm i -D fs gulp-fonter gulp-ttf2woff2
 ============ 26 =============
+SETUP .vscode\launch.json file for js code debugging for node.js
+1) Go to 'Run and debug' tab
+2) Click on 'create a launch.json file'
+3) Select 'Node.js'
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\gulpfile.js"
+        }
+    ]
+}
 ============ 27 =============
 ============ 28 =============
 ============ 29 =============
