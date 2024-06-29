@@ -140,6 +140,7 @@ group media queries (gulp-group-css-media-queries)
 ============ 23 =============
 compile js - install webpack-stream plugin
     npm i -D webpack-stream
+    npm i -D webpack
 ============ 24 =============
 processing images - install gulp-webp plugin
     npm i -D gulp-webp
@@ -225,6 +226,7 @@ setup archive functionality
 ftp configuration
     npm i -D vinyl-ftp gulp-util
 ============ 34 =============
+setup package.json development package section to latest version of plugins
 ============ 35 =============
 ============ 36 =============
 ============ 37 =============
