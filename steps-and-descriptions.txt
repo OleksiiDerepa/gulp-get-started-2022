@@ -155,6 +155,8 @@ processing fonts
         npm i -D fs gulp-fonter gulp-ttf2woff2
 ============ 26 =============
 SETUP .vscode\launch.json file for js code debugging for node.js
+https://code.visualstudio.com/Docs/editor/debugging
+https://wweb.dev/blog/debugging-javascript-vscode
 1) Go to 'Run and debug' tab
 2) Click on 'create a launch.json file'
 3) Select 'Node.js'
@@ -195,8 +197,31 @@ node --inspect=9229 index.js
         },
 5) Go to the debugging tab, select "Attach" from the dropdown, and click the start icon.
 ============ 28 =============
+Launch Firefox or Chrome against localhost
+https://wweb.dev/blog/debugging-javascript-vscode#:~:text=Launch%20Firefox%20or%20Chrome%20against%20localhost
+1) install 'Debugger for Firefox' plugin:
+    https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
+2) For Chrome, you don't need to install an extension as VS Code. It is included in the default debugger since version 1.46.
+        {
+            "name": "Launch Chrome against localhost",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+
+        },
 ============ 29 =============
 
+============ 30 =============
+============ 31 =============
+============ 32 =============
+============ 33 =============
+============ 34 =============
+============ 35 =============
+============ 36 =============
+============ 37 =============
+============ 38 =============
+============ 39 =============
 
 ============ 0 =============
 ============ 1 =============
